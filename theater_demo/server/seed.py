@@ -91,3 +91,5 @@ with app.app_context():
     # roles = [gamora, aleta, deputy, monsieur, evelyn, chef, margot]
     # db.session.add_all(roles)
     # db.session.commit()
+
+    print("DONE seeding :^)")
