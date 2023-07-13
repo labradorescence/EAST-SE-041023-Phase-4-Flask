@@ -32,17 +32,29 @@ def get_longest_movies():
 
 # 1a. put some cookies in inspector of browser
 # 1a. create a GET route for dark-mode
-@app.route('/dark-mode', methods=["GET"])
-def mode():
-    # # 1c. import ipdb; ipdb.set_trace()
-    # mode = request.cookies['mode']
-    # # 1d. send a response with cookies info
+# @app.route('/dark-mode', methods=["GET"])
+# def mode():
+#     # # 1c. import ipdb; ipdb.set_trace()
+#     # mode = request.cookies['mode']
+#     # # 1d. send a response with cookies info
+#     return make_response(jsonify(
+#         {
+#             "cookies": request.cookies["mode"]
+#         }
+#     ), 200)
+
+
+@app.route('/dark-mode', methods=['GET'])
+def dark_mode():
+    #import ipdb; ipdb.set_trace()
+    # 🛑 checkout request.cookies
+    # 1d. send a response with cookies info
     return make_response(jsonify(
         {
-            "cookies": request.cookies["mode"]
+            "cookies": request.cookies["mode"],
+            "hello": "bye"
         }
     ), 200)
-
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
